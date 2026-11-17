@@ -50,6 +50,8 @@ if (!resultado.Successful)
 app.UseAuthentication();
 app.UseAuthorization();
 
+app.UseStaticFiles();
+
 // ── Rotas ───────────────────────────────────────────────────
 app.MapGet("/", () => "LoreWiki API rodando!");
 
@@ -62,5 +64,9 @@ app.MapGet("/teste-db", async () =>
 
 AuthEndpoints.MapRoutes(app);
 WorldsEndpoints.MapRoutes(app);
+PagesEndpoints.MapRoutes(app);
+CampaignsEndpoints.MapRoutes(app);
+PlayerLinksEndpoints.MapRoutes(app);
+ImagesEndpoints.MapRoutes(app);
 
 app.Run();
