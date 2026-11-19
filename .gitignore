@@ -1,5 +1,5 @@
-bin/
-obj/
-appsettings.json
-wwwroot/uploads/*
-!wwwroot/uploads/.gitkeep
+lorewiki-api/bin/
+lorewiki-api/obj/
+lorewiki-api/appsettings.json
+lorewiki-api/wwwroot/uploads/*
+!lorewiki-api/wwwroot/uploads/.gitkeep
